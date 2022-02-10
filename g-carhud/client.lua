@@ -35,7 +35,7 @@ CarHud = {
                 local sleep = 1000
                 local km = (CarHud.getSpeed()* 3.6)
                 local fuelLevel = 0
-                if IsPedInAnyVehicle(CardHud.playerPed()) then
+                if IsPedInAnyVehicle(CarHud.playerPed()) then
                     fuelLevel = GetVehicleFuelLevel(CarHud.getVehicle());
                 else
                     fuelLevel = 0
